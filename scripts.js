@@ -39,52 +39,10 @@ const quizData = [
   },
 ];
 
-// const answerElm = document.querySelectorAll(".answer");
-// const [questionElm, option1, option2, option3, option4] = document.querySelectorAll("#question, #option_1, #option_2, #option_3, #option_4");
-// const submit = document.querySelector("#submit");
-
-// let currentQuiz = 0;
-// let score = 0;
-
-// const loadQuiz = () => {
-//   const {question, options} = quizData[currentQuiz];
-
-//   questionElm.innerText = question;
-//   options.forEach((val, idx)=>{
-//     let optionElem = window[`option_${idx + 1}`];
-//     optionElem.innerText = val;
-//   });
-  
-// }
-// loadQuiz();
-
-
-// const getSelectedOption = () =>{
-//   // let ans_index = -1;
-//   // answerElm.forEach((val, idx)=>{
-//   //   if(val.checked){
-//   //     ans_index = idx;
-//   //   }
-//   // });
-//   // return ans_index;
-//   let answerElement = Array.from(answerElm);
-//   return answerElement.findIndex((val) => val.checked);
-// }
-
-// submit.addEventListener('click', () => {
-//   const selectedOption = getSelectedOption();
-//   currentQuiz++;
-//   answerElm.forEach((curr)=>curr.checked = false);
-//   if(currentQuiz < quizData.length) loadQuiz();
-// });
-
-
 const [loadQuestion, option1, option2, option3,option4] = document.querySelectorAll('#question, #option_1, #option_2, #option_3, #option_4');
 const submit = document.querySelector('#submit');
 const options = document.querySelectorAll('.answer');
 const quiz = document.querySelector('#quiz');
-
-
 
 let currentQuiz = 0;
 let score = 0;
